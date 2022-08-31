@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		043FE3D528BFAC3600801CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE3D428BFAC3600801CCA /* AppDelegate.swift */; };
 		043FE3D728BFAC3600801CCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE3D628BFAC3600801CCA /* SceneDelegate.swift */; };
-		043FE3D928BFAC3600801CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043FE3D828BFAC3600801CCA /* ViewController.swift */; };
-		043FE3DC28BFAC3600801CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043FE3DA28BFAC3600801CCA /* Main.storyboard */; };
 		043FE3DE28BFAC5000801CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 043FE3DD28BFAC5000801CCA /* Assets.xcassets */; };
 		043FE3E128BFAC5000801CCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043FE3DF28BFAC5000801CCA /* LaunchScreen.storyboard */; };
+		04BBE9CE28BFADBE002CE6AA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9CC28BFADBE002CE6AA /* AlertController.swift */; };
+		04BBE9CF28BFADBE002CE6AA /* error.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 04BBE9CD28BFADBE002CE6AA /* error.jpeg */; };
+		04BBE9D428BFADCC002CE6AA /* FoldersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9D028BFADCB002CE6AA /* FoldersViewController.swift */; };
+		04BBE9D528BFADCC002CE6AA /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9D128BFADCB002CE6AA /* GreetingViewController.swift */; };
+		04BBE9D628BFADCC002CE6AA /* FolderContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9D228BFADCC002CE6AA /* FolderContentViewController.swift */; };
+		04BBE9D728BFADCC002CE6AA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9D328BFADCC002CE6AA /* MainViewController.swift */; };
+		04BBE9D928BFADDC002CE6AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9D828BFADDC002CE6AA /* User.swift */; };
+		04BBE9DB28BFADE4002CE6AA /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BBE9DA28BFADE4002CE6AA /* StorageManager.swift */; };
+		04BBE9DE28BFAF1D002CE6AA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 04BBE9DD28BFAF1D002CE6AA /* Realm */; };
+		04BBE9E028BFAF1D002CE6AA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 04BBE9DF28BFAF1D002CE6AA /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		043FE3D128BFAC3600801CCA /* DataStoreApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStoreApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043FE3D428BFAC3600801CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043FE3D628BFAC3600801CCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		043FE3D828BFAC3600801CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		043FE3DB28BFAC3600801CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		043FE3DD28BFAC5000801CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		043FE3E028BFAC5000801CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		043FE3E228BFAC5000801CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04BBE9CC28BFADBE002CE6AA /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		04BBE9CD28BFADBE002CE6AA /* error.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = error.jpeg; sourceTree = "<group>"; };
+		04BBE9D028BFADCB002CE6AA /* FoldersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoldersViewController.swift; sourceTree = "<group>"; };
+		04BBE9D128BFADCB002CE6AA /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		04BBE9D228BFADCC002CE6AA /* FolderContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FolderContentViewController.swift; sourceTree = "<group>"; };
+		04BBE9D328BFADCC002CE6AA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04BBE9D828BFADDC002CE6AA /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		04BBE9DA28BFADE4002CE6AA /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BBE9E028BFAF1D002CE6AA /* RealmSwift in Frameworks */,
+				04BBE9DE28BFAF1D002CE6AA /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,61 @@
 		043FE3D328BFAC3600801CCA /* DataStoreApp */ = {
 			isa = PBXGroup;
 			children = (
-				043FE3D428BFAC3600801CCA /* AppDelegate.swift */,
-				043FE3D628BFAC3600801CCA /* SceneDelegate.swift */,
-				043FE3D828BFAC3600801CCA /* ViewController.swift */,
-				043FE3DA28BFAC3600801CCA /* Main.storyboard */,
+				04BBE9E128BFB4CD002CE6AA /* App */,
+				04BBE9E228BFB4DE002CE6AA /* Helpers */,
+				04BBE9E328BFB4EE002CE6AA /* ViewControllers */,
+				04BBE9E428BFB501002CE6AA /* Models */,
+				04BBE9E528BFB50B002CE6AA /* Services */,
 				043FE3DD28BFAC5000801CCA /* Assets.xcassets */,
 				043FE3DF28BFAC5000801CCA /* LaunchScreen.storyboard */,
-				043FE3E228BFAC5000801CCA /* Info.plist */,
 			);
 			path = DataStoreApp;
+			sourceTree = "<group>";
+		};
+		04BBE9E128BFB4CD002CE6AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				043FE3D428BFAC3600801CCA /* AppDelegate.swift */,
+				043FE3D628BFAC3600801CCA /* SceneDelegate.swift */,
+				043FE3E228BFAC5000801CCA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		04BBE9E228BFB4DE002CE6AA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04BBE9CD28BFADBE002CE6AA /* error.jpeg */,
+				04BBE9CC28BFADBE002CE6AA /* AlertController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04BBE9E328BFB4EE002CE6AA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04BBE9D228BFADCC002CE6AA /* FolderContentViewController.swift */,
+				04BBE9D028BFADCB002CE6AA /* FoldersViewController.swift */,
+				04BBE9D328BFADCC002CE6AA /* MainViewController.swift */,
+				04BBE9D128BFADCB002CE6AA /* GreetingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		04BBE9E428BFB501002CE6AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04BBE9D828BFADDC002CE6AA /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04BBE9E528BFB50B002CE6AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				04BBE9DA28BFADE4002CE6AA /* StorageManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +145,10 @@
 			dependencies = (
 			);
 			name = DataStoreApp;
+			packageProductDependencies = (
+				04BBE9DD28BFAF1D002CE6AA /* Realm */,
+				04BBE9DF28BFAF1D002CE6AA /* RealmSwift */,
+			);
 			productName = DataStoreApp;
 			productReference = 043FE3D128BFAC3600801CCA /* DataStoreApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 043FE3C828BFAC3600801CCA;
+			packageReferences = (
+				04BBE9DC28BFAF1D002CE6AA /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 043FE3D228BFAC3600801CCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +194,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04BBE9CF28BFADBE002CE6AA /* error.jpeg in Resources */,
 				043FE3E128BFAC5000801CCA /* LaunchScreen.storyboard in Resources */,
 				043FE3DE28BFAC5000801CCA /* Assets.xcassets in Resources */,
-				043FE3DC28BFAC3600801CCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +207,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				043FE3D928BFAC3600801CCA /* ViewController.swift in Sources */,
+				04BBE9D728BFADCC002CE6AA /* MainViewController.swift in Sources */,
+				04BBE9D428BFADCC002CE6AA /* FoldersViewController.swift in Sources */,
 				043FE3D528BFAC3600801CCA /* AppDelegate.swift in Sources */,
+				04BBE9DB28BFADE4002CE6AA /* StorageManager.swift in Sources */,
+				04BBE9D628BFADCC002CE6AA /* FolderContentViewController.swift in Sources */,
+				04BBE9D928BFADDC002CE6AA /* User.swift in Sources */,
+				04BBE9CE28BFADBE002CE6AA /* AlertController.swift in Sources */,
+				04BBE9D528BFADCC002CE6AA /* GreetingViewController.swift in Sources */,
 				043FE3D728BFAC3600801CCA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		043FE3DA28BFAC3600801CCA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				043FE3DB28BFAC3600801CCA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		043FE3DF28BFAC5000801CCA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +355,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DataStoreApp/Info.plist;
+				INFOPLIST_FILE = DataStoreApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +381,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DataStoreApp/Info.plist;
+				INFOPLIST_FILE = DataStoreApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -356,6 +421,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04BBE9DC28BFAF1D002CE6AA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04BBE9DD28BFAF1D002CE6AA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04BBE9DC28BFAF1D002CE6AA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		04BBE9DF28BFAF1D002CE6AA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04BBE9DC28BFAF1D002CE6AA /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 043FE3C928BFAC3600801CCA /* Project object */;
 }
