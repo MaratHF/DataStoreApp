@@ -131,9 +131,9 @@ class MainViewController: UITableViewController {
         
         let changeNameAction = UIContextualAction(style: .normal, title: "Переименовать") { _, _, isDone in
             if self.folderID == "" {
-                self.showAlert(file: self.files[indexPath.row], folderFile: nil, indexPath: indexPath)
+                self.showChangeNameAlert(file: self.files[indexPath.row], folderFile: nil, indexPath: indexPath)
             } else {
-                self.showAlert(file: nil, folderFile: self.list[indexPath.row], indexPath: indexPath)
+                self.showChangeNameAlert(file: nil, folderFile: self.list[indexPath.row], indexPath: indexPath)
             }
             isDone(true)
         }
@@ -166,7 +166,6 @@ class MainViewController: UITableViewController {
     func setupNavigationBar() {
         title = "ФАЙЛЫ"
         
-        // Разобраться как написать [weak self]
         let importFromGallery = UIAction(title: "Загрузить из галереи", identifier: UIAction.Identifier(rawValue: "ImportFromGallery"),
                      handler: { _ in
                 self.importFromGallery()
@@ -285,20 +284,6 @@ class MainViewController: UITableViewController {
         }
         return 0.0
     }
-    
-    private func presentAlert() {
-        DispatchQueue.main.async {
-            let alert = UIAlertController(
-                title: "Ошибка загрузки",
-                message: "Ваш файл имеет формат .txt, либо его размер превышает 20 мб.",
-                preferredStyle: .alert
-            )
-            
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alert.addAction(okAction)
-            self.present(alert, animated: true)
-        }
-    }
 }
 // MARK: - UIImagePickerControllerDelegate, UINavigationControllerDelegate
 extension MainViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -331,7 +316,7 @@ extension MainViewController: UIImagePickerControllerDelegate, UINavigationContr
             tableView.reloadData()
         } else {
             picker.dismiss(animated: true)
-            presentAlert()
+            showAlert()
         }
     }
     
@@ -398,7 +383,7 @@ extension MainViewController: UIDocumentPickerDelegate {
             fileUrl.stopAccessingSecurityScopedResource()
             tableView.reloadData()
         } else {
-            presentAlert()
+            showAlert()
         }
     }
 }
@@ -415,7 +400,21 @@ extension MainViewController: QLPreviewControllerDataSource {
 }
 // MARK: - Alert Controller
 extension MainViewController {
-    private func showAlert(file: File?, folderFile: FileInFolder?, indexPath: IndexPath) {
+    private func showAlert() {
+        DispatchQueue.main.async {
+            let alert = UIAlertController(
+                title: "Ошибка загрузки",
+                message: "Ваш файл имеет формат .txt, либо его размер превышает 20 мб.",
+                preferredStyle: .alert
+            )
+            
+            let okAction = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(okAction)
+            self.present(alert, animated: true)
+        }
+    }
+    
+    private func showChangeNameAlert(file: File?, folderFile: FileInFolder?, indexPath: IndexPath) {
        
         let alert = UIAlertController.createAlertController()
         
